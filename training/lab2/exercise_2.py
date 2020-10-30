@@ -5,7 +5,14 @@ class ParamsLister():
 
     def __init__(self):
         pass
-    
+
+    def GET(self,**params):
+        if params!={}:
+            keysList=list(params.keys())
+            valuesList=[params[key] for key in params.keys()]
+        output=f" Keys :{keysList}, values :{valuesList}"
+        return output
+
     def PUT(self,**params):
         if params!={}:
             keysList=list(params.keys())
@@ -18,7 +25,7 @@ if __name__=="__main__":
     conf={
         '/':{
                 'request.dispatch':cherrypy.dispatch.MethodDispatcher(),
-                'tool.session.on':True
+                'tools.sessions.on':True
         }
     }
     cherrypy.config.update({'server.socket_port':8080})

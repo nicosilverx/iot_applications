@@ -1,0 +1,1 @@
+{"operations": [{"operation": "add", "operand_1": 12.0, "operand_2": 4.6, "result": "16.60"}, {"operation": "sub", "operand_1": 3.0, "operand_2": 12.0, "result": "-9.00"}]}
