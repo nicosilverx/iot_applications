@@ -8,6 +8,7 @@ class StringReverse(object):
         uri=list(uri)
         if len(uri)!=0:
             output = uri.pop()[::-1]
+        
         return output
 
 if __name__=="__main__":

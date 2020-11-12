@@ -7,7 +7,7 @@ data_out = {
 def append_to_data(operation, operands, output):
     global data_out
     data_out["operations"].append({
-                "operation" : cmd,
+                "operation" : operation,
                 "operand_1" : float(operands[0]),
                 "operand_2" : float(operands[1]),
                 "result" : f"{output:.2f}"
